@@ -87,4 +87,3 @@ kubectl port-forward pods/mongodb-deployment-(something) 27017:27017
 minikube stop
 ```
 
-## Fin.
