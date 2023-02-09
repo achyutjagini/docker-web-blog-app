@@ -1,4 +1,26 @@
 # Configuration for mongo-express
+
+#This YAML code defines a Kubernetes ConfigMap object, which can be used 
+# to store configuration data for an application. 
+
+#The ConfigMap allows you to store configuration data as
+# key-value pairs and make it available
+# to your application as environment variables or as files in a volume.
+
+#In this example, the ConfigMap has a single key-value pair: database_url
+#with a value of "mongodb-service". 
+
+#The key-value pair can be used to store a URL for a MongoDB database, for example. 
+#Your application can then 
+#access this information by using the database_url key.
+
+#It's important to note that this is just an example, and in a real-world scenario,
+#you would
+#likely have more complex configuration data. Additionally, the 
+#value of "mongodb-service" assumes
+#that you have a Kubernetes service with the name "mongodb-service" that provides
+# access to your MongoDB database.
+
 apiVersion: v1
 kind: ConfigMap
 metadata:

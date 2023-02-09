@@ -1,5 +1,20 @@
 # '---' is used to separate the definitions of the components/resources
 
+#This YAML file defines a Deployment resource in Kubernetes. The Deployment is named 
+#"mongodb-deployment" 
+#and it is used to manage the deployment of a MongoDB database.
+
+#The Deployment specifies that it should have one replica of the Pod running at all times, 
+#using the replicas field. The selector field matchLabels specifies the label app: mongodb,
+# which is used to select the Pods that the Deployment should manage.
+
+#The template field defines the specification for the Pod that will be created by the Deployment. 
+#The Pod contains a single container named "mongodb", which is based on the latest MongoDB image.
+# The container listens on port 27017 and exposes the MongoDB database. The environment variables
+# MONGO_INITDB_ROOT_USERNAME and MONGO_INITDB_ROOT_PASSWORD are set using values from a Kubernetes
+#Secret named "secret", which provides secure storage for sensitive data. The values for these environment
+#variables are read from the key-value pairs mongo-root-username and mongo-root-password in the Secret.
+
 # Deployment for the mongodb server
 apiVersion: apps/v1
 kind: Deployment

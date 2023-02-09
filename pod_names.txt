@@ -1,0 +1,5 @@
+C:\Users\achyu\Desktop\blogapp>kubectl get pods
+NAME                                        READY   STATUS              RESTARTS   AGE
+flask-app-deployment-6b5f7f48c9-pmtq6       0/1     ContainerCreating   0          28s
+mongo-express-deployment-6b5d7fc74d-dd9db   0/1     ContainerCreating   0          28s
+mongodb-deployment-6d869cbc95-tr8l8         0/1     ContainerCreating   0          28s
